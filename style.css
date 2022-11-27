@@ -32,8 +32,10 @@ body {
     text-shadow: 1px 1px #ffffff5b;
 }
 
-.result {
+.result,
+.current {
     min-height: 20px;
+    font-style: normal;
     font-weight: 800;
 }
 
