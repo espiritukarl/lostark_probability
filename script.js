@@ -1,4 +1,5 @@
 let myContent = document.querySelector(".result");
+let currentChance = document.querySelector(".current")
 let input = document.querySelector("input");
 let button = document.querySelector("button")
 let i = 0;
@@ -14,6 +15,8 @@ function myFunction() {
 
     array.push(x)
     let result = (1 - array.reduce((a, b) => a * b, 1))
+
+    currentChance.textContent = x * 100 + '%';
     myContent.textContent = 'Attempt #' + i + ': ' + (result * 100).toFixed(2) + '%';
 }
 
