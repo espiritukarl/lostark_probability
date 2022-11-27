@@ -9,14 +9,14 @@ let n = input.value;
 
 function myFunction() {
     let x = 1 - n;
-    if (x == n * 2) x = n * 2;
+    if (i >= 10) x = 1 - n * 2;
     else x = x - n * i * 0.1;
     i += 1;
 
     array.push(x)
     let result = (1 - array.reduce((a, b) => a * b, 1))
 
-    currentChance.textContent = x * 100 + '%';
+    currentChance.textContent = (100 - x * 100).toFixed(2) + '%';
     myContent.textContent = 'Attempt #' + i + ': ' + (result * 100).toFixed(2) + '%';
 }
 
